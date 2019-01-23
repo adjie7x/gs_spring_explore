@@ -2,7 +2,8 @@ package hello;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+//import static org.junit.Assert.assertTrue;
+import hello.utility.MyMath;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +15,6 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import hello.utility.MyMath;
 
 public class MyMathTest {
 
@@ -58,7 +58,7 @@ public class MyMathTest {
         list.add("test");
         boolean isEmpty = list.isEmpty();
         System.out.println("isEmpty : "+isEmpty);
-        assertTrue(isEmpty);			
+//        assertTrue(isEmpty);			
         assertEquals(1, list.size());			
     }
 

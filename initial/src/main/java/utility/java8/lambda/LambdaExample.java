@@ -23,7 +23,7 @@ public class LambdaExample {
 		System.out.println(isNegative.computeTest(-5));
 
 		System.out.println();
-		
+
 		System.out.println("2. The Arrow Operator");
 
 		LambdaInterface2 morningGreeting = (str) -> "Good Morning " + str + "!";
@@ -36,7 +36,7 @@ public class LambdaExample {
 		System.out.println(eveningGreeting.processName("Jessica"));
 
 		System.out.println();
-		
+
 		System.out.println("3. Block Lambda Expressions");
 
 		// Block lambda to reverse string
@@ -53,7 +53,7 @@ public class LambdaExample {
 		System.out.println(reverseStr.myStringFunction("Lambda Demo"));
 
 		System.out.println();
-		
+
 		System.out.println("4. Generic Functional Interfaces");
 
 		// String version of MyGenericInteface
@@ -76,16 +76,30 @@ public class LambdaExample {
 			return result;
 		};
 
+		// String version of MyGenericInteface and return int
+		LambdaGenericInterface<String> reverseNewCase = 
+				(String str) -> {
+			return String.valueOf(str.compareTo(str));
+//			int result = 1;
+//
+//			for (int i = 1; i <= str.length(); i++)
+//				result = i * result;
+//
+//			return result;
+		};
+		
+		System.out.println(reverseNewCase.compute("a"));
+
 		// Output: omeD adbmaL
 		System.out.println(reverse.compute("Lambda Demo"));
 
 		// Output: 120
 		System.out.println(factorial.compute(5));
-		
+
 		System.out.println();
-		
+
 		System.out.println("5. Lambda Expressions as arguments");
 		System.out.println(reverseStr(reverseStr, "Lambda Demo"));
-		
+
 	}
 }
