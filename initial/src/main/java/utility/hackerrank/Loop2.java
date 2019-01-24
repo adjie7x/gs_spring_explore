@@ -1,5 +1,7 @@
 package utility.hackerrank;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Loop2 {
@@ -28,6 +30,15 @@ public class Loop2 {
 		System.out.println("Age: " + age);
 		System.out.println("Mobile Number: " + mobileNo);
 		System.out.println("CGPA: " + cgpa);
+	}
+	
+	void execute(int a, int b, int n){
+		int [] arrTmp = new int [n];
+		List<int[]> result = new ArrayList<int[]>();
+		for (int i = 0; i < arrTmp.length; i++) {
+			
+		}
+		
 	}
 
 	public static void main(String[] args) {
